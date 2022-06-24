@@ -27,13 +27,16 @@ body{
 }
 .nav-link{
   text-decoration: none;
-  padding: 6px 15px;
-  color: #094b65;
+  padding: 8px 25px;
+  margin-left: 7px;
+  color: #094b65!important;
   border-radius: 20px;
 }
-.nav-link.active:hover {
+.nav-link.active, .nav-link:hover {
   background: #094b65;
-  color: #fff;
+  color: #fff!important;
+}
+.nav-link:hover {
   transition: 0.5s;
 }
 section {

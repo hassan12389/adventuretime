@@ -11,45 +11,32 @@ body{
   background: #fff;
   min-height: 100vh;
 }
-#header {
+.navbar {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 30px 100px!important;
   z-index: 10000;
 }
-#header .logo {
+.logo {
   color: #094b65;
   font-weight: 700;
   font-size: 2em;
   text-decoration: none;
 }
-#header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#header ul li{
-  list-style: none;
-  margin-left: 20px;
-}
-#header ul li a{
+.nav-link{
   text-decoration: none;
   padding: 6px 15px;
   color: #094b65;
   border-radius: 20px;
 }
-#header ul li a:hover,
-#header ul li a.active{
+.nav-link.active:hover {
   background: #094b65;
   color: #fff;
   transition: 0.5s;
 }
-section{
+section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -116,4 +103,35 @@ section #text span {
 .sec p {
   font-size: 1em;
   color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+  #header {
+    padding: 25px 80px;
+  }
+  #header ul li a {
+    font-size: 14px;
+  }
+  #header ul li {
+    margin-left: 14px;
+  }
+  #btn {
+    padding: 7px 23px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #header {
+    padding: 20px 25px;
+  }
+  #header ul li a {
+    font-size: 12px;
+  }
+  #header ul li {
+    margin-left: 13px;
+  }
+  #btn {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
 }
